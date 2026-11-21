@@ -6,8 +6,7 @@ const HaxballJS = HaxballJSModule.default || HaxballJSModule;
 const PORT = process.env.PORT || 3000;
 const server = http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
-  res.end('⚽ HaxBall Futsal Room is Running 24/7 on Render!
-');
+  res.end("HaxBall Futsal Room 24/7");
 });
 server.listen(PORT, () => {
   console.log(`Web server listening on port ${PORT}`);
