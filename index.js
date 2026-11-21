@@ -1,6 +1,5 @@
-const http = require('http');
-const HaxballJSModule = require('haxball.js');
-const HaxballJS = HaxballJSModule.default || HaxballJSModule;
+import http from 'http';
+import HaxballJS from 'haxball.js';
 
 // 1. سيرفور HTTP صغير باش Render يبقى مأكتيفي السيرفور ومينعسش
 const PORT = process.env.PORT || 3000;
