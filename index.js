@@ -1,5 +1,6 @@
 const http = require('http');
-const HaxballJS = require('haxball.js');
+const HaxballJSModule = require('haxball.js');
+const HaxballJS = HaxballJSModule.default || HaxballJSModule;
 
 // 1. سيرفور HTTP صغير باش Render يبقى مأكتيفي السيرفور ومينعسش
 const PORT = process.env.PORT || 3000;
@@ -13,7 +14,7 @@ server.listen(PORT, () => {
 });
 
 // 2. تشغيل روم هاكسبول فـ الخلفية
-HaxballJS.then((HBInit) => {
+(typeof HaxballJS === 'function' ? HaxballJS() : HaxballJS).then((HBInit) => {
   console.log("Starting HaxBall Headless Room...");
 
   const HAXBALL_TOKEN = process.env.HAXBALL_TOKEN || "";
