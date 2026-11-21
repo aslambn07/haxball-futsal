@@ -7,6 +7,6 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "haxball.js": "^1.1.2"
+    "haxball.js": "^5.1.1"
   }
 }
