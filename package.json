@@ -2,6 +2,7 @@
   "name": "haxball-futsal-24h",
   "version": "1.0.0",
   "description": "24/7 HaxBall Futsal Headless Room",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
